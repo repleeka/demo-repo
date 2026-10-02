@@ -1,0 +1,9 @@
+# nllb_tani_finetune.ipynb — on Colab keep the preinstalled CUDA build of torch
+torch>=2.3
+transformers>=4.46        # NLLB-200 (M2M100 architecture), AutoTokenizer / AutoModelForSeq2SeqLM
+huggingface_hub>=0.23     # downloads the PLM and its sentencepiece.bpe.model
+sentencepiece>=0.2.0      # source-side subword sampling on NLLB's SentencePiece model
+sacrebleu>=2.4            # chrF++, BLEU, TER (same signatures as m2mTani-base)
+numpy>=1.26
+pandas>=2.0
+tensorboard>=2.15         # optional: training curves
